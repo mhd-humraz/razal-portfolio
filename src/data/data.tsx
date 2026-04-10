@@ -46,7 +46,7 @@ export const siteConfig = {
   subtitle: "Professional Video Editor | Cinematic | Commercial | Social Media",
   heroVideoUrl: "https://cdn.coverr.co/videos/coverr-a-city-at-night-4444/1080p.mp4",
   showreelUrl: "https://cdn.coverr.co/videos/coverr-a-busy-intersection-at-night-3666/1080p.mp4",
-  logoText: "RAZAL",
+  logoText: "Muhammed RAZAL",
 };
 
 export const navItems: NavItem[] = [
