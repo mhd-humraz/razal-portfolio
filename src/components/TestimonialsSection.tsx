@@ -1,54 +1,82 @@
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
-import { Quote } from "lucide-react";
+import { useRef, useState } from "react";
+import { motion, useInView, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { testimonials } from "@/data/data";
 
 const TestimonialsSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
+  const [current, setCurrent] = useState(0);
+
+  const next = () => setCurrent((c) => (c + 1) % testimonials.length);
+  const prev = () => setCurrent((c) => (c - 1 + testimonials.length) % testimonials.length);
+
+  const t = testimonials[current];
 
   return (
     <section id="testimonials" className="section-padding" ref={ref}>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="mb-16 text-center"
+          className="text-center mb-16"
         >
           <p className="text-primary tracking-[0.3em] uppercase text-sm mb-3">Testimonials</p>
           <h2 className="text-4xl md:text-5xl font-display font-bold">
-            Client <span className="gold-text">Feedback</span>
+            Client <span className="neon-text">Feedback</span>
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((t, i) => (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ delay: 0.3 }}
+          className="glass-card rounded-2xl p-10 md:p-14 text-center relative"
+        >
+          <Quote className="text-primary/20 w-12 h-12 mx-auto mb-6" />
+
+          <AnimatePresence mode="wait">
             <motion.div
-              key={t.name}
-              initial={{ opacity: 0, y: 40 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="glass-card rounded-xl p-8 relative group hover:border-primary/30 transition-all duration-500"
+              key={current}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4 }}
             >
-              <Quote className="text-primary/20 w-10 h-10 mb-4" />
-              <p className="text-muted-foreground leading-relaxed mb-6 italic">
+              <p className="text-xl md:text-2xl font-light text-foreground leading-relaxed mb-8 italic">
                 "{t.quote}"
               </p>
-              <div className="flex items-center gap-4">
-                <img
-                  src={t.avatar}
-                  alt={t.name}
-                  className="w-12 h-12 rounded-full object-cover border-2 border-primary/30"
-                />
-                <div>
-                  <p className="font-semibold text-foreground">{t.name}</p>
-                  <p className="text-sm text-muted-foreground">{t.role}</p>
-                </div>
-              </div>
+              <p className="font-display font-semibold text-lg">{t.name}</p>
+              <p className="text-sm text-muted-foreground">{t.role}</p>
             </motion.div>
-          ))}
-        </div>
+          </AnimatePresence>
+
+          <div className="flex justify-center gap-4 mt-10">
+            <button
+              onClick={prev}
+              className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:border-primary/50 transition-colors"
+            >
+              <ChevronLeft size={18} />
+            </button>
+            <div className="flex items-center gap-2">
+              {testimonials.map((_, i) => (
+                <div
+                  key={i}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    i === current ? "bg-primary w-6" : "bg-muted-foreground/30"
+                  }`}
+                />
+              ))}
+            </div>
+            <button
+              onClick={next}
+              className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:border-primary/50 transition-colors"
+            >
+              <ChevronRight size={18} />
+            </button>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
