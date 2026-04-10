@@ -46,7 +46,7 @@ export const siteConfig = {
   subtitle: "Professional Video Editor | Cinematic | Commercial | Social Media",
   heroVideoUrl: "https://cdn.coverr.co/videos/coverr-a-city-at-night-4444/1080p.mp4",
   showreelUrl: "https://cdn.coverr.co/videos/coverr-a-busy-intersection-at-night-3666/1080p.mp4",
-  logoText: "Muhammed RAZAL",
+  logoText: "RAZAL",
 };
 
 export const navItems: NavItem[] = [
@@ -159,7 +159,28 @@ export const services: Service[] = [
   },
 ];
 
-
+export const testimonials: Testimonial[] = [
+  {
+    name: "Sarah Chen",
+    role: "Creative Director, Lumina Studios",
+    quote: "Transformed our raw footage into a cinematic masterpiece. The attention to detail exceeded all expectations.",
+  },
+  {
+    name: "Marcus Johnson",
+    role: "YouTuber, 2M+ Subscribers",
+    quote: "The editing style is unique, fresh, and keeps my audience coming back. My channel grew 3x since we started working together.",
+  },
+  {
+    name: "Elena Vasquez",
+    role: "Brand Manager, NovaTech",
+    quote: "Our product launch video generated 10x more engagement than any previous campaign. Pure visual magic.",
+  },
+  {
+    name: "David Park",
+    role: "Independent Filmmaker",
+    quote: "The color grading alone took my short film to the next level. Every frame feels intentional and cinematic.",
+  },
+];
 
 export const socialLinks: ContactLink[] = [
   { icon: <Instagram className="w-5 h-5" />, label: "Instagram", href: "https://instagram.com" },
