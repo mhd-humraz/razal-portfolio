@@ -5,7 +5,7 @@ import ShowreelSection from "@/components/ShowreelSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import SkillsSection from "@/components/SkillsSection";
 import ServicesSection from "@/components/ServicesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+ 
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import LoadingScreen from "@/components/LoadingScreen";
