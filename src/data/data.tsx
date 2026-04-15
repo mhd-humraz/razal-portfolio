@@ -66,7 +66,7 @@ export const projects: Project[] = [
     title: "Neon Horizons",
     category: "Cinematic",
     thumbnail: "https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&q=80",
-    videoUrl: "https://cdn.coverr.co/videos/coverr-a-city-at-night-4444/1080p.mp4",
+    videoUrl: "src/media/Cooper.mp4",
     description: "Cinematic journey through neon-lit urban landscapes.",
     tall: true,
   },
@@ -131,7 +131,7 @@ export const projects: Project[] = [
 ];
 
 export const skills: Skill[] = [
-  { name: "Premiere Pro", level: 95, icon: "🎬" },
+  { name: "CapCut", level: 95, icon: "🎬" },
   { name: "After Effects", level: 92, icon: "✨" },
   { name: "DaVinci Resolve", level: 88, icon: "🎨" },
 ];
@@ -186,5 +186,5 @@ export const socialLinks: ContactLink[] = [
   { icon: <Instagram className="w-5 h-5" />, label: "Instagram", href: "https://instagram.com" },
   { icon: <Twitter className="w-5 h-5" />, label: "Twitter", href: "https://twitter.com" },
   { icon: <Youtube className="w-5 h-5" />, label: "YouTube", href: "https://youtube.com" },
-  { icon: <Mail className="w-5 h-5" />, label: "Email", href: "mailto:hello@motioncraft.pro" },
+  { icon: <Mail className="w-5 h-5" />, label: "Email", href: "razalrazalrazal098@gmail.com" },
 ];
