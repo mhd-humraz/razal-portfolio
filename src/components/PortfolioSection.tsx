@@ -105,7 +105,7 @@ const PortfolioSection = () => {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
-              className="relative w-full max-w-4xl aspect-video rounded-xl overflow-hidden"
+              className="relative w-full max-w-sm aspect-[9/16] rounded-xl overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-primary/30 via-accent/20 to-primary/30 blur-md" />
