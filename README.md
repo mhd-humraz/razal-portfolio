@@ -1,7 +1,7 @@
 # 🚀 Razal Portfolio
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=3000&color=00C2FF&center=true&vCenter=true&width=600&lines=Hi+I'm+Humraz+👋;Creative+Developer+%26+Designer;Building+Modern+Web+Experiences;Welcome+to+My+Portfolio+🚀" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=3000&color=00C2FF&center=true&vCenter=true&width=600&lines=Hi+I'm+Razal;Creative+Video Editor +%26+Designer;Edit+Reels+static+videos;Welcome+to+My+Portfolio+🚀" />
 </p>
 
 ---
