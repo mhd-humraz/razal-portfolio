@@ -20,9 +20,9 @@
 ## ⚡ Tech Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-Structure-orange?style=for-the-badge&logo=html5" />
-  <img src="https://img.shields.io/badge/CSS3-Styling-blue?style=for-the-badge&logo=css3" />
-  <img src="https://img.shields.io/badge/JavaScript-Logic-yellow?style=for-the-badge&logo=javascript" />
+  <img src="https://img.shields.io/badge/React-JS-61DAFB?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Vite-Build-646CFF?style=for-the-badge&logo=vite" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript" />
   <img src="https://img.shields.io/badge/TailwindCSS-UI-38B2AC?style=for-the-badge&logo=tailwind-css" />
 </p>
 
@@ -52,29 +52,103 @@ A modern, responsive personal portfolio website designed to showcase my projects
 ---
 
 ## 📁 Project Structure
+  <img src="https://img.shields.io/github/forks/mhd-humraz/razal-portfolio?style=for-the-badge&color=blue" />
+  <img src="https://img.shields.io/github/issues/mhd-humraz/razal-portfolio?style=for-the-badge&color=red" />
+  <img src="https://img.shields.io/github/license/mhd-humraz/razal-portfolio?style=for-the-badge&color=green" />
+</p>
+
+---
+
+## ⚡ Tech Stack
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/TypeScript-TS-3178C6?style=for-the-badge&logo=typescript" />
+  <img src="https://img.shields.io/badge/Vite-Build-646CFF?style=for-the-badge&logo=vite" />
+  <img src="https://img.shields.io/badge/TailwindCSS-UI-38B2AC?style=for-the-badge&logo=tailwind-css" />
+  <img src="https://img.shields.io/badge/shadcn/ui-Components-black?style=for-the-badge" />
+</p>
+
+---
+
+## 🌐 Live Demo
+
+🔗 Add your deployed link here  
+Example: https://your-portfolio.vercel.app
+
+---
+
+## 📌 About
+
+A modern, high-performance portfolio website built using **React, TypeScript, and Vite**, designed to showcase my projects, skills, and creativity with a clean UI and smooth user experience.
+
+---
+
+## ✨ Features
+
+- ⚛️ Component-based architecture  
+- ⚡ Lightning-fast performance with Vite  
+- 🎨 Beautiful UI using Tailwind + shadcn  
+- 📱 Fully responsive design  
+- 🧩 Reusable UI components  
+- 📂 Project showcase & sections  
+- 📬 Contact section  
+
+---
+
+## 📁 Project Structure
 
 ```bash
 razal-portfolio/
-│── index.html
-│── assets/
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│── README.md
+│── public/
+│── src/
+│   ├── components/
+│   │   ├── HeroSection.tsx
+│   │   ├── PortfolioSection.tsx
+│   │   ├── SkillsSection.tsx
+│   │   ├── ContactSection.tsx
+│   │   └── ui/              # shadcn UI components
+│   ├── pages/
+│   │   ├── Index.tsx
+│   │   └── NotFound.tsx
+│   ├── hooks/
+│   ├── data/
+│   ├── lib/
+│   ├── App.tsx
+│   └── main.tsx
+│── package.json
+│── tailwind.config.ts
+│── vite.config.ts
 ```
 
 ---
 
 ## ⚙️ Installation & Setup
 
-```bash
+ 
+# Clone repository
+```
 git clone https://github.com/mhd-humraz/razal-portfolio.git
-cd razal-portfolio
-open index.html
 ```
 
----
+# Navigate
+```
+cd razal-portfolio
+```
+# Install dependencies
+```
+npm install
+```
+# Start development server
+```
+npm run dev
+```
 
+## 🚀 Build for Production
+
+```bash
+npm run build
+```
  
 
 ## ⭐ Support
