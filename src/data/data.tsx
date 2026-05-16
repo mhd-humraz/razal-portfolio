@@ -66,7 +66,7 @@ export const projects: Project[] = [
     title: "Neon Horizons",
     category: "Cinematic",
     thumbnail: "https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&q=80",
-    videoUrl: "src/media/Cooper.mp4",
+    videoUrl: "Cooper.mp4",
     description: "Cinematic journey through neon-lit urban landscapes.",
     tall: true,
   },
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     title: "Velocity",
     category: "Commercial",
     thumbnail: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&q=80",
-    videoUrl: "https://cdn.coverr.co/videos/coverr-a-city-at-night-4444/1080p.mp4",
+    videoUrl: "https://drive.google.com/file/d/1CBZJu0Q7eh6-bck-phXDMTxiTll4R_aA/preview",
     description: "High-energy commercial for premium automotive brand.",
   },
   {
@@ -105,10 +105,10 @@ export const projects: Project[] = [
   },
   {
     id: "6",
-    title: "Pulse",
-    category: "Commercial",
+    title: "international",
+    category: "presentation",
     thumbnail: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
-    videoUrl: "https://cdn.coverr.co/videos/coverr-a-city-at-night-4444/1080p.mp4",
+    videoUrl: "international.mp4",
     description: "Product launch video with kinetic typography.",
   },
   {
