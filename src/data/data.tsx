@@ -108,7 +108,7 @@ export const projects: Project[] = [
     title: "international",
     category: "presentation",
     thumbnail: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
-    videoUrl: "international.mp4",
+    videoUrl: "https://res.cloudinary.com/dizrqmqyn/video/upload/q_auto/f_auto/v1778951151/international_tlsvo0.mp4",
     description: "Product launch video with kinetic typography.",
   },
   {
