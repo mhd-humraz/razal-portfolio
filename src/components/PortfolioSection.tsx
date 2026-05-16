@@ -98,18 +98,24 @@ const PortfolioSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-background/90 backdrop-blur-md p-6"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-background/90 backdrop-blur-md p-4 sm:p-6"
             onClick={() => setSelectedProject(null)}
           >
             <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
+              initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              className="relative w-full max-w-4xl aspect-video rounded-xl overflow-hidden"
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="relative rounded-xl overflow-hidden"
+              style={{
+                aspectRatio: (selectedProject.ratio ?? "16/9").replace("/", " / "),
+                maxWidth: "min(95vw, calc(90vh * " + (selectedProject.ratio ?? "16/9") + "))",
+                maxHeight: "90vh",
+                width: "100%",
+              }}
               onClick={(e) => e.stopPropagation()}
             >
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-primary/30 via-accent/20 to-primary/30 blur-md" />
-              <div className="relative rounded-xl overflow-hidden">
+              <div className="relative rounded-xl overflow-hidden w-full h-full bg-black">
                 <button
                   onClick={() => setSelectedProject(null)}
                   className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-primary/20 transition-colors"
@@ -119,7 +125,7 @@ const PortfolioSection = () => {
                 <video
                   autoPlay
                   controls
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   src={selectedProject.videoUrl}
                 />
               </div>

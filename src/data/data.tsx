@@ -20,6 +20,8 @@ export interface Project {
   videoUrl: string;
   description: string;
   tall?: boolean;
+  /** Aspect ratio of the source video, e.g. "16/9", "9/16", "1/1", "4/5". Defaults to "16/9". */
+  ratio?: string;
 }
 
 export interface Service {
