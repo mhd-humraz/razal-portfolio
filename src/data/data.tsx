@@ -66,7 +66,7 @@ export const projects: Project[] = [
     title: "Neon Horizons",
     category: "Cinematic",
     thumbnail: "https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&q=80",
-    videoUrl: "Cooper.mp4",
+    videoUrl: "src/media/Cooper.mp4",
     description: "Cinematic journey through neon-lit urban landscapes.",
     tall: true,
   },
