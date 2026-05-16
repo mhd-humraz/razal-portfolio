@@ -47,7 +47,7 @@ export const siteConfig = {
   title: "Crafting Stories Through Motion",
   subtitle: "Professional Video Editor | Cinematic | Commercial | Social Media",
   heroVideoUrl: "https://cdn.coverr.co/videos/coverr-a-city-at-night-4444/1080p.mp4",
-  showreelUrl: "src/media/Cooper.mp4",
+  showreelUrl: "https://res.cloudinary.com/dizrqmqyn/video/upload/q_auto/f_auto/v1778951506/Cooper_ujamnq.mp4",
   logoText: "MUHAMMED RAZAL",
 };
 
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     title: "Neon Horizons",
     category: "Cinematic",
     thumbnail: "https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&q=80",
-    videoUrl: "../src/media/Cooper.mp4",
+    videoUrl: "https://res.cloudinary.com/dizrqmqyn/video/upload/q_auto/f_auto/v1778951506/Cooper_ujamnq.mp4",
     description: "Cinematic journey through neon-lit urban landscapes.",
     tall: true,
   },
