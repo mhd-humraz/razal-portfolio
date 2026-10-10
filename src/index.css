@@ -1,128 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 240 10% 4%;
-    --foreground: 0 0% 96%;
-
-    --card: 240 8% 8%;
-    --card-foreground: 0 0% 96%;
-
-    --popover: 240 8% 8%;
-    --popover-foreground: 0 0% 96%;
-
-    --primary: 265 90% 60%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 240 6% 14%;
-    --secondary-foreground: 0 0% 85%;
-
-    --muted: 240 6% 16%;
-    --muted-foreground: 240 5% 55%;
-
-    --accent: 210 100% 55%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 6% 18%;
-    --input: 240 6% 18%;
-    --ring: 265 90% 60%;
-
-    --radius: 0.75rem;
-
-    --neon-glow: 265 90% 60% / 0.4;
-    --accent-glow: 210 100% 55% / 0.3;
-
-    --sidebar-background: 240 8% 6%;
-    --sidebar-foreground: 0 0% 96%;
-    --sidebar-primary: 265 90% 60%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 6% 14%;
-    --sidebar-accent-foreground: 0 0% 96%;
-    --sidebar-border: 240 6% 18%;
-    --sidebar-ring: 265 90% 60%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
+    color-scheme: dark;
   }
 
   body {
-    @apply bg-background text-foreground font-body antialiased;
+    background-color: #0A0A0A;
+    color: #F5F5F5;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+  /* Custom subtle dark scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
   }
-}
-
-@layer components {
-  .glass-card {
-    @apply bg-card/40 backdrop-blur-2xl border border-border/40 shadow-2xl;
+  ::-webkit-scrollbar-track {
+    background: #0A0A0A;
   }
-
-  .neon-text {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary;
+  ::-webkit-scrollbar-thumb {
+    background: #242424;
+    border-radius: 3px;
   }
-
-  .section-padding {
-    @apply py-24 md:py-32 px-6 md:px-12 lg:px-20;
-  }
-
-  .neon-glow {
-    box-shadow: 0 0 40px hsl(var(--neon-glow)), 0 0 80px hsl(var(--neon-glow));
-  }
-
-  .accent-glow {
-    box-shadow: 0 0 30px hsl(var(--accent-glow)), 0 0 60px hsl(var(--accent-glow));
-  }
-
-  .gradient-border {
-    position: relative;
-  }
-
-  .gradient-border::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 1px;
-    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), transparent);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C8FF00;
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Cinematic film grain overlay (optional subtle texture) */
+.film-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
 }
 
-html {
-  scroll-behavior: smooth;
+/* 2.39:1 Anamorphic aspect ratio helper */
+.aspect-anamorphic {
+  aspect-ratio: 2.39 / 1;
 }
 
-::-webkit-scrollbar {
-  width: 4px;
+/* 9:16 Vertical aspect ratio helper */
+.aspect-vertical {
+  aspect-ratio: 9 / 16;
 }
-::-webkit-scrollbar-track {
-  background: hsl(var(--background));
+
+/* 16:9 Standard aspect ratio helper */
+.aspect-cinematic {
+  aspect-ratio: 16 / 9;
 }
-::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary) / 0.4);
-  border-radius: 2px;
+
+/* Film slate border markers */
+.slate-corner-tl {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 12px;
+  height: 12px;
+  border-top: 1.5px solid rgba(200, 255, 0, 0.6);
+  border-left: 1.5px solid rgba(200, 255, 0, 0.6);
+  pointer-events: none;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--primary) / 0.7);
+.slate-corner-br {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 12px;
+  height: 12px;
+  border-bottom: 1.5px solid rgba(200, 255, 0, 0.6);
+  border-right: 1.5px solid rgba(200, 255, 0, 0.6);
+  pointer-events: none;
 }
