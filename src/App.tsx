@@ -3,7 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './sections/Hero';
 import { Portfolio } from './sections/Portfolio';
 import { Services } from './sections/Services';
-import { Process } from './sections/Process';
+// import { Process } from './sections/Process';
 import { About } from './sections/About';
 import { Testimonials } from './sections/Testimonials';
 import { Contact } from './sections/Contact';
@@ -41,7 +41,7 @@ export function App() {
         <Services />
 
         {/* 4. Creative Process */}
-        <Process />
+        {/* <Process /> */}
 
         {/* 5. About & Editorial Philosophy */}
         <About />

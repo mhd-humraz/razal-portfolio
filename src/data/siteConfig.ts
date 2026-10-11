@@ -52,14 +52,14 @@ export interface SiteConfig {
     turnaround: string;
     highlight: string;
   }[];
-  process: {
-    step: string;
-    phase: string;
-    title: string;
-    description: string;
-    details: string[];
-    timeline: string;
-  }[];
+  // process: {
+  //   step: string;
+  //   phase: string;
+  //   title: string;
+  //   description: string;
+  //   details: string[];
+  //   timeline: string;
+  // }[];
   testimonials: {
     id: string;
     quote: string;
@@ -109,7 +109,7 @@ export const siteConfig: SiteConfig = {
       description: "Across client YouTube releases, commercials, and viral short-form campaigns.",
     },
     {
-      value: "8+ Yrs",
+      value: "4+ Yrs",
       label: "Post-Production Experience",
       description: "From indie documentary film festivals to broadcast commercial delivery.",
     },
@@ -150,10 +150,9 @@ export const siteConfig: SiteConfig = {
     { name: "DaVinci Resolve Studio 19", category: "Color", level: "Expert / Daily Driver" },
     { name: "Adobe Premiere Pro", category: "NLE", level: "Expert / 8+ Years" },
     { name: "Adobe After Effects", category: "VFX & Motion", level: "Advanced Motion Titles" },
-    { name: "Final Cut Pro", category: "NLE", level: "Advanced" },
+    { name: "Cap Cut Pro", category: "NLE", level: "Advanced" },
     { name: "Avid Media Composer", category: "NLE", level: "Narrative Assembly" },
     { name: "Dehancer Pro & FilmConvert", category: "Color", level: "35mm/16mm Emulation" },
-    { name: "FabFilter Pro-Q3 & L2", category: "Audio", level: "Surgical EQ & Limiting" },
     { name: "iZotope RX 10 Advanced", category: "Audio", level: "Dialogue & Noise Cleanup" },
     { name: "Blackmagic Cloud & Frame.io", category: "Hardware", level: "Real-time Client Collaboration" },
     { name: "Calibrite ColorChecker & OLED 4K", category: "Hardware", level: "Hardware Color Calibrated" },
@@ -220,55 +219,56 @@ export const siteConfig: SiteConfig = {
       highlight: "Studio-Grade Foley",
     },
   ],
-  process: [
-    {
-      step: "01",
-      phase: "DISCOVER",
-      title: "The Creative Brief & Ingestion",
-      description:
-        "We align on vision, audience expectations, reference moods, and technical constraints. Footage is safely ingested with checksum validation and organized into structured bins.",
-      details: ["Footage Checksum Ingestion & Backup", "Director/Creator Brief Analysis", "Audio & Reference Moodboard Alignment"],
-      timeline: "Day 1",
-    },
-    {
-      step: "02",
-      phase: "PLAN",
-      title: "Assembly & Story Pacing",
-      description:
-        "Building the narrative skeleton. Selecting the strongest takes, structuring the rhythm, pacing the emotional beats, and locking in the primary story arc.",
-      details: ["A-Roll Assembly & Beat Sequencing", "Pacing & Story Structure Review", "Client Assembly Review via Frame.io"],
-      timeline: "Day 2 - 3",
-    },
-    {
-      step: "03",
-      phase: "EDIT",
-      title: "Fine Cut, Color & Sound Polish",
-      description:
-        "The magic happens here: tightening cuts to the millisecond, layering rich foley sound design, applying bespoke DaVinci color grading, and crafting kinetic title cards.",
-      details: ["Frame-Accurate Micro Timing", "DaVinci Resolve ACES Color Grading", "Multi-stem Sound Design & Audio Polish"],
-      timeline: "Day 4 - 6",
-    },
-    {
-      step: "04",
-      phase: "DELIVER",
-      title: "Mastering & Multi-Platform Export",
-      description:
-        "Incorporating your targeted feedback with rapid iteration. Final deliveries rendered in uncompressed ProRes 422 HQ, optimized H.264 web streams, and vertical adaptations.",
-      details: ["Structured Revision Cycles (Frame.io)", "Multi-Platform Master Exports (4K, 16:9, 9:16)", "Clean Archived Project Delivery"],
-      timeline: "Day 7",
-    },
-  ],
+  // process: [
+  //   {
+  //     step: "01",
+  //     phase: "DISCOVER",
+  //     title: "The Creative Brief & Ingestion",
+  //     description:
+  //       "We align on vision, audience expectations, reference moods, and technical constraints. Footage is safely ingested with checksum validation and organized into structured bins.",
+  //     details: ["Footage Checksum Ingestion & Backup", "Director/Creator Brief Analysis", "Audio & Reference Moodboard Alignment"],
+  //     timeline: "Day 1",
+  //   },
+  //   {
+  //     step: "02",
+  //     phase: "PLAN",
+  //     title: "Assembly & Story Pacing",
+  //     description:
+  //       "Building the narrative skeleton. Selecting the strongest takes, structuring the rhythm, pacing the emotional beats, and locking in the primary story arc.",
+  //     details: ["A-Roll Assembly & Beat Sequencing", "Pacing & Story Structure Review", "Client Assembly Review via Frame.io"],
+  //     timeline: "Day 2 - 3",
+  //   },
+  //   {
+  //     step: "03",
+  //     phase: "EDIT",
+  //     title: "Fine Cut, Color & Sound Polish",
+  //     description:
+  //       "The magic happens here: tightening cuts to the millisecond, layering rich foley sound design, applying bespoke DaVinci color grading, and crafting kinetic title cards.",
+  //     details: ["Frame-Accurate Micro Timing", "DaVinci Resolve ACES Color Grading", "Multi-stem Sound Design & Audio Polish"],
+  //     timeline: "Day 4 - 6",
+  //   },
+  //   {
+  //     step: "04",
+  //     phase: "DELIVER",
+  //     title: "Mastering & Multi-Platform Export",
+  //     description:
+  //       "Incorporating your targeted feedback with rapid iteration. Final deliveries rendered in uncompressed ProRes 422 HQ, optimized H.264 web streams, and vertical adaptations.",
+  //     details: ["Structured Revision Cycles (Frame.io)", "Multi-Platform Master Exports (4K, 16:9, 9:16)", "Clean Archived Project Delivery"],
+  //     timeline: "Day 7",
+  //   },
+  // ],
   testimonials: [
     {
-      id: "test-1",
-      quote:
-        "Elias transformed our brand campaign from ordinary footage into a cinematic piece that outperformed all previous quarters. His sense of pacing and sound design is on par with feature film editors.",
-      author: "Marcus Thorne",
-      role: "Creative Director",
-      company: "Apex Media Group",
-      avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
-      projectTitle: "Automotive Brand Campaign (Porsche Spec)",
-      metricsResult: "+340% Engagement Rate",
+      
+        id: "test-1",
+        quote: "Razal has an incredible eye for storytelling and a real talent for turning raw footage into cinematic experiences. His attention to detail, creative transitions, and mastery of pacing and sound design make every project stand out. He's truly an awesome video editor who brings ideas to life with a professional touch.",
+        author: "Muhammed Humraz",
+        role: "Developer & Creative Technologist",
+        company: "Independent",
+        avatarUrl: "https://i.postimg.cc/zvkQxCR2/humraz.jpg?auto=format&fit=crop&w=200&q=80",
+        projectTitle: "Creative Collaboration & Video Editing",
+        metricsResult: "Cinematic Quality • Creative Storytelling"
+      
     },
     {
       id: "test-2",
